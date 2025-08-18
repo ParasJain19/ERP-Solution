@@ -21,8 +21,8 @@
                 var productNameku = $("#productName").val();
                 var orderQuantityku = $("#orderQuantity").val();
                 var cpku = $("#costPrice").val();
-                var spku = parseFloat(cpku) + (parseFloat(cpku) / 10);
-
+                var spku = parseFloat(cpku) * 1.10;
+                
                 var obj = {
                     type: "get",
                     url: "/submit",
@@ -122,6 +122,10 @@
             <div class="nav-item">
                 <i class="fas fa-comments"></i> <a href="communication.html"
                     style="text-decoration: none;color:black">Communication</a>
+            </div>
+            <div class="nav-item">
+                <i class="fas fa-comments"></i> <a href="../index.html"
+                    style="text-decoration: none;color:black">LOG OUT</a>
             </div>
         </div>
 
